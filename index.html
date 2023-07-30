@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="/todoAppFrontendMentor2/style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="main-content">
+            <div class="top-content">
+                <div id="heading-div"><h1 id="todo-heading">TODO</h1></div>
+                <div id="theme"></div>
+            </div>
+            <div class="new-task">
+                <input type="checkbox" id="myCheckbox" />
+                <label for="myCheckbox"></label>
+                <input type="text"  id="enter-task" placeholder="Create a new todo...">
+            </div>
+            <div id="tasks">
+                <!-- <div class="check-box">
+                    <input type="checkbox"  id="myCheckboxTasks7" >
+                    <label for="myCheckboxTasks7"></label>
+                    <p>Pick up groceriesxadfkjedwbx  </p>
+                    <div id="close-icon"></div>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox"  id="myCheckboxTasks8" >
+                    <label for="myCheckboxTasks8"></label>
+                    <p>Pick up</p>
+                    <div id="close-icon"></div>
+                </div> -->
+            </div>
+
+
+            <!-------------------------------- ACTIVE TASKS ---------------------------->
+            <div class="hide" id="tasks-active">
+                
+            </div>
+
+
+            <!-------------------------------- COMPLETED TASKS ---------------------------->
+            <div class="hide" id="tasks-completed">
+            </div>
+
+
+            <!-- --------------------------FOOTER ------------------ -->
+
+            <div class="footer">
+                <button id="item-pending">0 item left</button>
+                <div id="states">
+                    <button class="active-button" id="all">All</button>
+                    <button id="active">Active</button>
+                    <button id="completed">Completed</button>
+                </div>
+                <button id="clear-completed">Clear Completed</button>  
+            </div>
+            <!-- MOBILE-FOOTER---------------------------------------->
+            <div class="mobile-footer">
+                
+                <button class="active-button" id="mobile-all">All</button>
+                <button id="mobile-active">Active</button>
+                <button id="mobile-completed">Completed</button>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="/todoAppFrontendMentor2/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+    font-family: 'Josefin Sans', sans-serif; 
+}
+body{
+    /* min-height: 100vh; */
+    background-color: hsl(235,21%,11%);    
+    background-image: url(/todoAppFrontendMentor/images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    
+}
+.light-body{
+    background-image: url(/todoAppFrontendMentor/images/bg-desktop-light.jpg) !important;   
+    /* background-color: hsl(0, 0%, 98%); */
+    background-color: hsl(236, 33%, 92%);
+}
+#background-image{
+    height: 40%;
+}
+
+
+.hide{
+    display: none !important;
+}
+.main-content{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 6em;
+    width: min(95vw, 31.25em);
+
+
+}
+.top-content{
+    display: flex;
+    justify-content: space-between;
+
+    /* align-items: center; */
+}
+#todo-heading{
+    font-size: 40px;
+    color: hsl(236, 33%, 92%);
+    letter-spacing: 10px;
+    display: block;
+    align-items: center;
+}
+div#heading-div{
+    width: auto;
+    align-items: center;
+    display:inline-block;
+}
+#theme{
+    width: auto;
+}
+#theme{
+    width: 30px;
+    height: 30px;
+    background: url(/todoAppFrontendMentor2/images/icon-sun.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.theme{
+    background: url(/todoAppFrontendMentor2/images/icon-moon.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+/* new task */
+.new-task{
+    width: 100%;
+    height: 60px;
+    /* color: aqua; */
+    /* position: relative; */
+    z-index: 5;
+    background-color: hsl(235, 24%, 19%);
+    margin-top: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    /* padding: 0 20px; */
+
+    /* justify-content: center; */
+}
+.new-task-light{
+    background-color: hsl(0, 0%, 98%) !important;
+}
+.new-task-light label{
+    background-color: hsl(0, 0%, 98%) !important;
+    border: 2px solid hsl(233, 11%, 84%) !important; 
+}
+.new-task input[type="checkbox"]{
+    display: none;
+}
+.new-task label{
+    display: inline-block;
+    width: 20px ;
+    height: 20px ;
+    border-radius: 50%;
+    background: hsl(235, 24%, 19%);
+    border: 2px solid hsl(237, 14%, 26%);
+    cursor: pointer;
+    margin-right: 25px; 
+    margin-left: 10px;
+}
+#enter-task{
+    width: 350px;
+    height: 40px;
+    background-color: hsl(235, 24%, 19%);
+    border: none;
+    color: hsl(0, 0%, 98%);
+    font-size: 16px;
+    outline: none;
+}
+.enter-task-light{
+    background-color: hsl(0, 0%, 98%) !important;
+    color: hsl(235, 19%, 35%) !important;
+}
+.enter-task-light::placeholder{
+    color: hsl(233, 11%, 84%) !important;
+}
+.enter-task-light:focus{
+    outline: none;
+    border: none;
+}
+#enter-task::placeholder{
+    color: hsl(237, 14%, 26%);
+}
+#enter-task.enter
+#enter-task:focus{
+    outline: none;
+    border: none;
+    /* font-size: 16px; */
+}
+/* #tasks > .check-box > p.line-through{
+    text-decoration: line-through;
+    color: hsl(234, 11%, 52%);
+} */
+#tasks > .check-box > p.line-through.line-through-light{
+    color: hsl(233, 11%, 84%)!important;
+}
+/* -------------------------------------ALL TASKS DIV-------------------------------- */
+#tasks{
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* border-radius: 5px; */
+    color: hsl(234, 39%, 85%);
+    /* min-height: 50vh; */
+    /* to be implemented using javascript */
+    /* border-bottom: 1px solid hsl(237, 14%, 26%); */
+
+}
+
+#tasks .check-box{
+    width: 100%;
+    min-height: 60px;
+    align-items: center;
+    display: flex;
+    background-color: hsl(235, 24%, 19%);
+    border-bottom: 1px solid hsl(237, 14%, 26%);
+}
+.tasks-check-box-light{
+    background-color: hsl(0, 0%, 98%) !important;
+    border-bottom: 2px solid hsl(236, 33%, 92%) !important;
+}
+
+#tasks div input[type="checkbox"]{
+    display: none;
+}
+#tasks label{
+    /* position: relative; */
+    /* box-sizing:content-box; */
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background: hsl(235, 24%, 19%);
+    border: 2px solid hsl(237, 14%, 26%);
+    cursor: pointer;
+    margin-left: 10px;
+    outline: none;
+    /* padding-right: 25px; */
+}
+#tasks label.tasks-label-light {
+    background: hsl(0, 0%, 98%) ;
+    border: 2px solid hsl(233, 11%, 84%) !important;
+}
+#tasks input[type="checkbox"]:checked + label{
+    /* border-radius: 50%; */
+    background: center url(/todoAppFrontendMentor/images/icon-check.svg) no-repeat, linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+}
+
+#tasks label:hover{
+    border: 2px solid rgb(172, 172, 172);
+    /* background-image: linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%)); */
+}
+
+#tasks p{
+    color: hsl(234, 39%, 85%);
+    font-size: 16px;
+    padding: 20px;
+    width: 400px;
+}
+#tasks p.tasks-light{
+    color: hsl(234, 11%, 52%); 
+}
+/* -------------------------------------------TASKS-ACTIVE DIV------------------------------------------- */
+
+#tasks-active{
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* border-radius: 5px; */
+    color: hsl(234, 39%, 85%);
+    /* min-height: 50vh; */
+    /* to be implemented using javascript */
+    /* border-bottom: 1px solid hsl(237, 14%, 26%); ------------------------------------------> */
+
+}
+#tasks-active .tasks-active-light{
+    background-color: hsl(0, 0%, 98%) !important;
+}
+#tasks-active .tasks-active-light p{
+    color: hsl(235, 19%, 35%) !important;
+}
+#tasks-active .check-box{
+    width: 100%;
+    min-height: 60px;
+    align-items: center;
+    display: flex;
+    background-color: hsl(235, 24%, 19%);
+}
+#tasks-active div input[type="checkbox"]{
+    display: none;
+}
+#tasks-active div{
+    width: 100%;
+    min-height: 60px;
+    align-items: center;
+    display: flex;
+    background-color: hsl(235, 24%, 19%);
+}
+#tasks-active label{
+    /* position: relative; */
+    /* box-sizing:content-box; */
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background: hsl(235, 24%, 19%);
+    border: 2px solid hsl(237, 14%, 26%);
+    cursor: pointer;
+    margin-left: 10px;
+    outline: none;
+    /* padding-right: 25px; */
+}
+#tasks-active input[type="checkbox"]:checked + label{
+    /* border-radius: 50%; */
+    background: center url(/todoAppFrontendMentor/images/icon-check.svg) no-repeat, linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+}
+#tasks-active label:hover{
+    border: 2px solid rgb(172, 172, 172);
+    /* background-image: linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%)); */
+}
+
+#tasks-active p{
+    color: hsl(234, 39%, 85%);
+    font-size: 16px;
+    padding: 20px;
+    width: 400px;
+}
+/* ---------------------------- TASK COMPLETED DIV--------------------------------------------------- */
+
+#tasks-completed{
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* border-radius: 5px; */
+    color: hsl(234, 39%, 85%);
+    /* min-height: 50vh; */
+    /* to be implemented using javascript */
+    /* border-bottom: 1px solid hsl(237, 14%, 26%); ------------------------------------------> */
+
+}
+#tasks-completed div{
+    width: 100%;
+    min-height: 60px;
+    align-items: center;
+    display: flex;
+    background-color: hsl(235, 24%, 19%);
+}
+#tasks-completed .tasks-completed-light {
+    background-color: hsl(0, 0%, 98%) !important;
+} 
+#tasks-completed .tasks-completed-light p{
+    color: hsl(235, 19%, 35%) !important;
+} 
+#tasks-completed div input[type="checkbox"]{
+    display: none;
+}
+#tasks-completed label{
+    /* position: relative; */
+    /* box-sizing:content-box; */
+    display: inline-block;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    background: hsl(235, 24%, 19%);
+    border: 2px solid hsl(237, 14%, 26%);
+    cursor: pointer;
+    margin-left: 10px;
+    outline: none;
+    /* padding-right: 25px; */
+}
+#tasks-completed input[type="checkbox"]:checked + label{
+    /* border-radius: 50%; */
+    background: center url(/todoAppFrontendMentor/images/icon-check.svg) no-repeat, linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+}
+#tasks-completed label:hover{
+    border: 2px solid rgb(172, 172, 172);
+    /* background-image: linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%)); */
+}
+
+#tasks-completed p{
+    color: hsl(234, 39%, 85%);
+    font-size: 16px;
+    padding: 20px;
+    width: 400px;
+}
+
+
+
+.footer{
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* bottom: -10px; */
+    width: 100%;
+    height: 60px;
+    background: hsl(235, 24%, 19%);
+    font-size: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    /* padding: 0 5px;   */
+    /* border: 2px solid hsl(237, 14%, 26%); */
+}
+.footer-light{
+    background: hsl(0, 0%, 98%) !important;
+}
+#states{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer button{
+    white-space: nowrap;
+    padding: 8px;
+    background: hsl(235, 24%, 19%);
+    outline: none;
+    border: none;
+    color: hsl(234, 11%, 52%);
+    font-weight: 700;
+}
+.footer  button.footer-button-light{
+    background: hsl(0, 0%, 98%) !important; 
+}
+.footer button:hover.footer-button-light{
+    color: hsl(235, 19%, 35%);
+}
+.footer button:hover{
+    color: hsl(236, 33%, 92%);
+}
+#item-pending{
+    padding-left: 20px;
+    /* white-space: nowrap;/ */
+}
+#item-pending.footer-button-light.item-pending-light{
+    font-weight: 400;
+}
+#clear-completed{
+    padding-right: 20px;
+}
+#clear-completed.footer-button-light.clear-completed-light{
+    font-weight: 400;
+}
+/* close icon */
+.close-icon{
+    opacity: 0;
+    text-align: center;
+    background-size:cover;
+    /* background-position: center; */
+    width: 15px !important;
+    min-height: 15px !important;
+    background-image: url(/todoAppFrontendMentor/images/icon-cross.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+#tasks div:hover .close-icon{
+    transition: opacity 0.2s;
+    opacity: 1;
+}
+.mobile-footer{
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px !important;
+    display: none;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* bottom: -10px; */
+    width: 100%;
+    height: 50px;
+    background: hsl(235, 24%, 19%);
+    font-size: 10px;
+    overflow: hidden;
+}
+.mobile-footer button{
+    white-space: nowrap;
+    padding: 8px;
+    background: hsl(235, 24%, 19%);
+    outline: none;
+    border: none;
+    color: hsl(234, 11%, 52%);
+    font-weight: 700;
+}
+.mobile-footer.mobile-footer-light{
+    background: hsl(0, 0%, 98%) !important; 
+}
+.mobile-footer.mobile-footer-light button{
+    background: hsl(0, 0%, 98%) !important;
+}
+.mobile-footer.mobile-footer-light button:hover{
+    color: hsl(235, 19%, 35%);
+}
+.active-button{
+    color: rgb(87, 101, 255) !important;;
+}
+.mobile-footer button:hover{
+    color: hsl(236, 33%, 92%);
+}
+#tasks p.uncheck-para-color{
+    color:hsl(234, 39%, 85%);
+}
+@media(max-width:500px){
+    #todo-heading{
+        font-size: 30px;
+    }
+    #theme{
+        width: 20px;
+        height: 20px;
+    }
+    .theme{
+        width: 20px !important;
+        height: 20px !important;     
+    }
+    .new-task{
+        height: 50px;
+    }
+    .new-task label{
+        width: 23px;
+        margin-right: 10px;
+    }
+    #close-icon{
+        min-height:14px !important;
+        width: 14px !important;
+        margin-right: 10px;
+    }
+    #tasks p{
+        font-size: 12px;
+        padding: 8px;
+        width: 300px;
+    }
+    #tasks-active p{
+        font-size: 12px;
+        padding: 8px;
+        width: 300px;
+    }
+    #tasks-completed p{
+        font-size: 12px;
+        padding: 8px;
+        width: 300px;
+    }
+    .main-content{
+        width: 350px;
+    }
+    #tasks div{
+        min-height: 55px;
+    }
+    #tasks-active div{
+        min-height: 55px;
+    }
+    #tasks-completed div{
+        min-height: 55px;
+    }
+    #states{
+        display: none;
+    }
+    #item-pending{
+        padding-left: 8px;
+    }
+    #clear-completed{
+        padding-right: 8px;
+    }
+    .mobile-footer{
+        display: flex;
+    }
+}
