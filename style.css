@@ -489,7 +489,7 @@ div#heading-div{
         width: 23px;
         margin-right: 10px;
     }
-    #close-icon{
+    .close-icon{
         min-height:14px !important;
         width: 14px !important;
         margin-right: 10px;
