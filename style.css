@@ -9,7 +9,7 @@
 body{
     /* min-height: 100vh; */
     background-color: hsl(235,21%,11%);    
-    background-image: url(/bg-desktop-dark.jpg);
+    background-image: url(../bg-desktop-dark.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,7 +18,7 @@ body{
     
 }
 .light-body{
-    background-image: url(/bg-desktop-light.jpg) !important;   
+    background-image: url(../bg-desktop-light.jpg) !important;   
     /* background-color: hsl(0, 0%, 98%); */
     background-color: hsl(236, 33%, 92%);
 }
@@ -64,12 +64,12 @@ div#heading-div{
 #theme{
     width: 30px;
     height: 30px;
-    background: url(/icon-sun.svg);
+    background: url(../icon-sun.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .theme{
-    background: url(/icon-moon.svg) !important;
+    background: url(../icon-moon.svg) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     width: 30px !important;
@@ -202,7 +202,7 @@ div#heading-div{
 }
 #tasks input[type="checkbox"]:checked + label{
     /* border-radius: 50%; */
-    background: center url(/icon-check.svg) no-repeat, linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+    background: center url(../icon-check.svg) no-repeat, linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
 }
 
 #tasks label:hover{
@@ -275,7 +275,7 @@ div#heading-div{
 }
 #tasks-active input[type="checkbox"]:checked + label{
     /* border-radius: 50%; */
-    background: center url(/icon-check.svg) no-repeat, linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+    background: center url(../icon-check.svg) no-repeat, linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
 }
 #tasks-active label:hover{
     border: 2px solid rgb(172, 172, 172);
@@ -337,7 +337,7 @@ div#heading-div{
 }
 #tasks-completed input[type="checkbox"]:checked + label{
     /* border-radius: 50%; */
-    background: center url(/icon-check.svg) no-repeat, linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+    background: center url(../icon-check.svg) no-repeat, linear-gradient(120deg, hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
 }
 #tasks-completed label:hover{
     border: 2px solid rgb(172, 172, 172);
@@ -418,7 +418,7 @@ div#heading-div{
     /* background-position: center; */
     width: 15px !important;
     min-height: 15px !important;
-    background-image: url(/icon-cross.svg);
+    background-image: url(../icon-cross.svg);
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
