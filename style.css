@@ -23,7 +23,7 @@ body{
     background-color: hsl(236, 33%, 92%);
 }
 .light-body-mobile.light-body{
-    background-image: url(/todoAppFrontendMentor/images/bg-mobile-light.jpg) !important; 
+    background-image: url(bg-mobile-light.jpg) !important; 
     background-size: cover !important;  
     /* background-color: hsl(0, 0%, 98%); */
     background-color: hsl(236, 33%, 92%);
@@ -479,7 +479,7 @@ div#heading-div{
 @media(max-width:560px){
     body{
         height: 250px;
-        background-image: url(/todoAppFrontendMentor2/images/bg-mobile-dark.jpg);
+        background-image: url(bg-mobile-dark.jpg);
     }
     #todo-heading{
         font-size: 30px;
