@@ -498,6 +498,8 @@ div#heading-div{
     .new-task label{
         width: 23px;
         margin-right: 10px;
+        width: 20px;
+        height: 20px;
     }
     .close-icon{
         min-height:14px !important;
@@ -548,5 +550,9 @@ div#heading-div{
 @media(max-width:450px){
     .main-content{
         width: 350px;
+    }
+    #tasks .check-box label{
+        width: 20px !important;
+        height: 18px !important;
     }
 }
