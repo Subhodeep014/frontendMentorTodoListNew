@@ -550,6 +550,9 @@ div#heading-div{
     .main-content{
         width: 350px;
     }
+   .new-task label{
+        margin-right: 10px;
+    }
     #tasks .check-box label{
         width: 20px !important;
         height: 18px !important;
