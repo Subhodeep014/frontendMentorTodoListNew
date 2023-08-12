@@ -494,6 +494,7 @@ div#heading-div{
     }
     .new-task{
         height: 50px;
+        width: 20px;
     }
     .new-task label{
         margin-right: 10px;
